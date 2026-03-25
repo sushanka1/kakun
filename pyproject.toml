@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "games-project-sankova"
+version = "0.1.0"
+description = "Python package with games"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+VD-games = "games_project_sankova.VD_games.scripts.VD_games:main"
