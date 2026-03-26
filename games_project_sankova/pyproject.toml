@@ -6,12 +6,16 @@ build-backend = "hatchling.build"
 name = "games-project-sankova"
 version = "0.1.0"
 description = "Python package with games"
-readme = "README.md"
 requires-python = ">=3.8"
-dependencies = [
-    "prompt>=0.4.1",
-]
+dependencies = []
 
 [project.scripts]
 VD-games = "games_project_sankova.VD_games.scripts.VD_games:main"
 vd-even = "games_project_sankova.VD_games.scripts.VD_even:main"
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "C", "N"]
+ignore = ["N999"]
